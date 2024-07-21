@@ -1,0 +1,44 @@
+.cartContainer {
+  padding: 30px;
+  padding-bottom: 100px;
+  background-color: rgb(112, 108, 108);
+  min-height: 90vh;
+}
+.cartEachProduct {
+  border: 1px solid gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.imgnameprice {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+}
+.cartEachProduct img {
+  height: 80px;
+  width: 80px;
+}
+.Cname {
+  font-size: 17px;
+  font-weight: 500;
+  color: beige;
+}
+.Cprice {
+  font-size: 15px;
+  font-weight: 500;
+  color: gold;
+}
+.totalprice {
+  text-align: center;
+  padding: 20px 30px;
+}
+.totalprice h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: gold;
+}

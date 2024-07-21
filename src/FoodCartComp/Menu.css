@@ -1,0 +1,59 @@
+.mainCont {
+  background-color: rgb(112, 108, 108);
+  padding: 50px 100px;
+}
+img {
+  height: 250px;
+  width: 250px;
+  margin: 10px 10px 0px 10px;
+  transition: 0.3s ease-in-out;
+  border-radius: 8px;
+}
+img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  object-fit: cover;
+  width: 280px;
+  height: 280px;
+}
+p {
+  margin: 10px;
+}
+.headCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.headCont h1 {
+  color: beige;
+  font-weight: bolder;
+}
+.outputCont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.namePara {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  color: whitesmoke;
+}
+.pricePara {
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  color: gold;
+}
+.eachFood {
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.eachFood button {
+  width: 100%;
+}
