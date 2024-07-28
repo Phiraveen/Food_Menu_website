@@ -9,6 +9,14 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 export default function Header() {
   const { cart } = useContext(CartContextCreate);
 
+  const getcartnotifications = () => {
+    let totalcartItems = 0;
+    for(let i in cart){
+      totalcartItems = totalcartItems + cart[i];
+    }
+    return totalcartItems;
+  }
+
   return (
     <div className="mainContainer">
       <div className="mainName">
@@ -24,7 +32,7 @@ export default function Header() {
         </Link>
         <Link to="/Cart">
           <ButtonGroup>
-            <Button variant="dark">{cart.length}</Button>
+            <Button variant="dark">{getcartnotifications()}</Button>
             <Button variant="warning">View Cart</Button>
           </ButtonGroup>
         </Link>

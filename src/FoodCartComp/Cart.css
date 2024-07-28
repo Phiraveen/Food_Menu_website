@@ -4,14 +4,20 @@
   background-color: rgb(112, 108, 108);
   min-height: 90vh;
 }
+.cartEachCont{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
 .cartEachProduct {
   border: 1px solid gold;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
-  width: 100%;
+  width: 70%;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 .imgnameprice {
   display: flex;
@@ -48,4 +54,8 @@
 }
 .gotomenubutton{
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }

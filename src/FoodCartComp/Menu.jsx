@@ -6,8 +6,7 @@ import { CartContextCreate } from "../Context/CartContext";
 function Menu() {
   const [menu, setmenu] = useState(data);
   const [filteredMenu, setfilteredMenu] = useState(menu);
-  const { cart, handleAddButton, handleRemoveButton } =
-    useContext(CartContextCreate);
+  const { cart, handleAddButton } = useContext(CartContextCreate);
 
   const category = menu.map((men) => men.category);
 
@@ -42,22 +41,13 @@ function Menu() {
             <img src={men.image} />
             <p className="namePara">{men.name}</p>
             <p className="pricePara">Price Rs.{men.amt}</p>
-
-            {cart.includes(men) ? (
-              <button
-                onClick={() => handleRemoveButton(men)}
-                className="btn btn-danger"
-              >
-                Remove from Cart
-              </button>
-            ) : (
               <button
                 onClick={() => handleAddButton(men)}
                 className="btn btn-warning"
               >
-                Add to Cart
+                Add to Cart {cart[men.id] > 0 && <span>({cart[men.id]})</span>}
               </button>
-            )}
+            
           </div>
         ))}
       </div>
